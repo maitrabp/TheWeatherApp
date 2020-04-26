@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/homebackground" />
+
+    <TextView
+        android:id="@+id/cityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="34sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text=""
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/dataTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:text="Five Day forecast below"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/cityTitle"
+        android:textAllCaps="true"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data is loading.."
+        android:layout_below="@id/dataTitle"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:layout_below="@+id/result"
+        android:id="@+id/backButton"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
